@@ -15,7 +15,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Generic {
 
 	WebDriver driver;
-	public Generic(WebDriver driver) {
+	
+	public Generic(WebDriver driver) 
+	{
 	 this.driver=driver;
 	}
 	

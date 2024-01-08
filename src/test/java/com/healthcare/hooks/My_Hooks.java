@@ -15,10 +15,13 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-public class My_Hooks {
+public class My_Hooks 
+ {
 	WebDriver driver;
+	
 	@Before
-	public void setup() throws IOException {
+	public void setup() throws IOException
+	{
 	Properties read = Readconfig.initializeproperties();
 	BrowserFactory.initializeBrowser(read.getProperty("browser"));	
 	driver = BrowserFactory.getDriver();

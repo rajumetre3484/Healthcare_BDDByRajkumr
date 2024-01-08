@@ -17,10 +17,12 @@ public class Loginpage {
 	@FindBy(id="btn-login")
 	private WebElement btnLogin;
 	
+	
 	WebDriver ldriver;
 	Generic common;
 	
-	public Loginpage(WebDriver driver) {
+	public Loginpage(WebDriver driver) 
+	{
 		this.ldriver=driver;
 		PageFactory.initElements(driver, this);
 		common=new Generic(driver);

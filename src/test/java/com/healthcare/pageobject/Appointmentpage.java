@@ -33,9 +33,11 @@ private WebElement btnBookappointment;
 @FindBy(xpath = "//h2[text()='Appointment Confirmation']")
 private WebElement checkConfirmation;
 
+
 WebDriver ldriver;
 Generic common;
-public  Appointmentpage(WebDriver driver) {
+public  Appointmentpage(WebDriver driver)
+{
 	this.ldriver=driver;
 	PageFactory.initElements(driver, this);
 	common=new Generic(driver);
